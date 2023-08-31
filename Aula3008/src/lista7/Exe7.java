@@ -16,14 +16,13 @@ public class Exe7 {
 		for (int i =0;i<palavra.length();i++) {
 			letra = palavra.charAt(i);
 			if(letra >= 'A' && letra <= 'Z'){
-				letra = palavra.charAt(i);
-				comp[i] = letra.toLowerCase();
+				comp[i] = Character.toLowerCase(palavra.charAt(i));
 			}else if(letra >= 'a' && letra <= 'z'){
-				comp[i] = palavra.charAt(i);
+				comp[i] = Character.toUpperCase(palavra.charAt(i));
 			}
 			
 		}
-		
+		palavra = String.valueOf(comp);
 		System.out.println("Resultado >>" +palavra);
 	}
 
